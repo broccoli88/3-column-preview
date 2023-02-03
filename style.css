@@ -37,8 +37,7 @@ body {
     color: var(--color-tansparent-white);
     line-height: 1.8;
 
-    /* background-color: var(--color-light-gray); */
-    background-color: var(--color-orange);
+    background-color: var(--color-light-gray);
 }
 
 h2 {
@@ -47,6 +46,9 @@ h2 {
     text-transform: uppercase;
     color: var(--color-light-gray);
     letter-spacing: 0.5px;
+    line-height: 1.1;
+
+    margin: 3.7rem 0;
 }
 
 @media (min-width: 1440px) {
@@ -57,12 +59,18 @@ h2 {
 
 /* Buttons */
 
-.btn {
+a {
     text-decoration: none;
+}
+
+.btn {
     text-transform: capitalize;
 
     padding: 1.5rem 3.5rem;
     border-radius: 40px;
+    border: 2px solid transparent;
+    display: inline-block;
+    white-space: nowrap;
 
     background-color: var(--color-light-gray);
     transition: all 0.2s;
@@ -74,14 +82,43 @@ h2 {
     background-color: transparent;
 }
 
-.btn-orange {
+.btn--orange {
     color: var(--color-orange);
 }
 
-.btn-cyan {
+.btn--cyan {
     color: var(--color-cyan);
 }
 
-.btn-dark-cyan {
+.btn--dark-cyan {
     color: var(--color-dark-cyan);
+}
+
+/* Icons */
+
+.icon {
+    width: 68px;
+    height: 40px;
+}
+
+/* Cards */
+
+.card {
+    width: 100%;
+    max-width: 310px;
+    padding: 5rem;
+}
+
+.card__description {
+    margin-bottom: 2.5rem;
+}
+
+.card--orange {
+    background-color: var(--color-orange);
+}
+
+@media (min-width: 1440px) {
+    .card__description {
+        margin-bottom: 8.5rem;
+    }
 }
