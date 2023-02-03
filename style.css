@@ -36,6 +36,9 @@ body {
     font-family: "Lexend Deca", sans-serif;
     color: var(--color-tansparent-white);
     line-height: 1.8;
+
+    /* background-color: var(--color-light-gray); */
+    background-color: var(--color-orange);
 }
 
 h2 {
@@ -44,4 +47,41 @@ h2 {
     text-transform: uppercase;
     color: var(--color-light-gray);
     letter-spacing: 0.5px;
+}
+
+@media (min-width: 1440px) {
+    h2 {
+        font-size: 3.6rem;
+    }
+}
+
+/* Buttons */
+
+.btn {
+    text-decoration: none;
+    text-transform: capitalize;
+
+    padding: 1.5rem 3.5rem;
+    border-radius: 40px;
+
+    background-color: var(--color-light-gray);
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    border: 2px solid var(--color-light-gray);
+    color: var(--color-light-gray);
+    background-color: transparent;
+}
+
+.btn-orange {
+    color: var(--color-orange);
+}
+
+.btn-cyan {
+    color: var(--color-cyan);
+}
+
+.btn-dark-cyan {
+    color: var(--color-dark-cyan);
 }
